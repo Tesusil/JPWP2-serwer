@@ -7,7 +7,7 @@ import javax.persistence.Id
 
 @Entity
 data class User(
-        @Id @GeneratedValue(strategy = GenerationType.AUTO) val id: Long = 0,
+        @Id @GeneratedValue(strategy = GenerationType.TABLE) val id: Long = 0,
         val userName: String = "",
         val password: String = "1234",
         val userRole: UserRole = UserRole.USER

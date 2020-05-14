@@ -1,10 +1,8 @@
 package com.tesusil.jezyki.wysokiego.poziomu.category
 
-import com.tesusil.jezyki.wysokiego.poziomu.category.request.CategoryException
 import com.tesusil.jezyki.wysokiego.poziomu.category.request.NewCategoryRequest
 import org.springframework.web.bind.annotation.*
 import java.util.*
-import javax.management.OperationsException
 
 @RestController
 @RequestMapping("/category/")
