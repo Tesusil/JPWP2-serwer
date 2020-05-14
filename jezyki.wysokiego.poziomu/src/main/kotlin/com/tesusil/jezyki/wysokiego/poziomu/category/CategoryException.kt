@@ -1,4 +1,4 @@
-package com.tesusil.jezyki.wysokiego.poziomu.category.request
+package com.tesusil.jezyki.wysokiego.poziomu.category
 
 import java.lang.Exception
 
