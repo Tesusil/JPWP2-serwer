@@ -9,6 +9,6 @@ import javax.persistence.*
 data class Product(@Id @GeneratedValue(strategy = GenerationType.TABLE) val id: Long = 0,
                    @NotNull val name: String = "",
                    @NotNull val price: Double = 1.0,
-                   @NotNull @ManyToOne val category: Category,
+                   @NotNull @ManyToOne @JoinColumn(name = "category_id", referencedColumnName = "id") val category: Category,
                    @Nullable val imgUrl: String? = null) {
 }

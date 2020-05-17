@@ -6,7 +6,7 @@ import java.util.*
 
 @RestController
 @RequestMapping("/category/")
-class CategoryController(val repository: CategoryRepository) {
+class CategoryController(private val repository: CategoryRepository) {
 
     @GetMapping("")
     fun getAll(): List<Category> {
